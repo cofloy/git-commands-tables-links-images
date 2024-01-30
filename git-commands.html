@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git commands</title>
+  </head>
+  <body>
+    <a href="tables.html">CHECK MEAL TABLE</a>
+    <h1>50 Commonly used command line and what they do.</h1>
+
+    <p>
+      git config - to set the basic configurations on github like name and
+      email.
+    </p>
+    <p>
+      git config --global user.name " " - This is used to set user name
+      globally.
+    </p>
+    <p>
+      git config --global user.name - This is used to confirm that user name has
+      been set.
+    </p>
+    <p>
+      git config --global user.email " " - This is used to set user email
+      globally.
+    </p>
+    <p>
+      git config --global user.email - This is used to confirm that email has
+      been set.
+    </p>
+    <p>
+      git config --global color.ui true - To see different colours on command
+      line for different outputs.
+    </p>
+    <p>
+      git help - displays the main help documentation, showing a list of
+      commonly used Git commands or to take help from github help section for
+      different commands and other errors.
+    </p>
+    <p>
+      git init - create an empty Git repository or reinitialize an existing one.
+    </p>
+
+    <p>git add . or git add --all - To add all files in the current folder</p>
+    <p>
+      git commit -m "message" or git commit -message "message" - creates a new
+      commit with the changes in the staging area and specifies the commit
+      message inline or to commit our changes(taking a snapshot) and providing a
+      message to remember for future reference.
+    </p>
+    <p>
+      git commit -a -m - To add any of our tracked files to staging area and
+      commit them by providing a message to remember.
+    </p>
+    <p>
+      git commit -a or git commit --all - commits all modified and deleted files
+      in the repository without explicitly using git add to stage the changes.
+    </p>
+    <p>
+      git reset -soft HEAD^ - to undo last commit and bring file to staging
+      area.
+    </p>
+    <p>
+      git reset -hard HEAD^ - to undo last commit and remove file from the
+      staging area as well(In case we went horribly wrong).
+    </p>
+    <p>git reset -hard HEAD^^ - to undo last 2 commits and all changes.</p>
+    <p>git remove rm - to remove remote from our local repository</p>
+    <p>
+      git branch - lists all branches in the repository and current branch that
+      we are working on.
+    </p>
+    <p>
+      git branch -M -creates a new branch which is a new version of the
+      repository as it appears when added, -M helps to move the name to the main
+    </p>
+    <p>git branch branch-name - creates a new branch with a specified name</p>
+    <p>git branch -d branch-name- deletes the specified branch</p>
+    <p>git branch -D -to forcefully delete a branch without making commits</p>
+    <p>git branch -a -lists all local and remote branches</p>
+    <p>git branch -r -lists all remote branches</p>
+    <p>git merge branch-name - merges the specified branch into the current</p>
+    <p>git log - displays the commit history of the current branch</p>
+
+    <p>
+      git remote add origin - connnects the local folder to the repository on
+      Github. It is followed by the repository's link.
+    </p>
+    <p>
+      git remote add adress -to add new remotes to our local repository for a
+      particular git address.
+    </p>
+    <p>
+      git push -u origin main - pushes code to Github. The -u flag creates a
+      tracking reference for the branch and origin main puts the code in the
+      main branch.
+    </p>
+    <p>git clone - used to make a copy of a repository from an existing url</p>
+    <p>
+      git status - shows the current state of a repository including tracked and
+      untracked files, modifiled files and branch information
+    </p>
+    <p>
+      git status -ignored - displays ignored files in addition to the regular
+      status output
+    </p>
+    <p>
+      git diff - shows the changes between the working directory and the staged
+      area(index)
+    </p>
+    <p>
+      git diff commit1 commit2 - displays the differences between two commits
+    </p>
+    <p>
+      git diff -staged or git diff -cached - displays the changees between the
+      staging area(index) and the last commit
+    </p>
+    <p>
+      git diff HEAD - displays the difference between the current directory and
+      the last commit
+    </p>
+    <p>
+      git restore file - restores a file in the working directory to its state
+      in the last commit
+    </p>
+    <p>
+      git reset commit - moves the branch pointer to a specified commit,
+      resetting the staging area and the working directory to match the
+      specified commit.
+    </p>
+    <p>
+      git rm file - removes a file from both the working directory and the
+      repository, staging the deletion.
+    </p>
+    <p>git mv - moves or renames a file or directory in your Git repository</p>
+    <p>ls - to see directories and files in the current directory.</p>
+    <p>
+      ls -la - to see hidden directories and files within the current directory.
+    </p>
+    <p>
+      mkdir -to make a directory that is, to create a folder if not created
+      initially
+    </p>
+    <p>touch - to create a single file</p>
+    <p>cd - to change directory that is, to move from one folder to another</p>
+    <p>
+      pwd - present working directory that is, to display the name pf the
+      current folder
+    </p>
+    <p>git switch main - to switch back to the main branch</p>
+    <p>git tag - to see the list of available tags.</p>
+    <p>
+      git fetch - to fetch down any changes from global repository to current
+      repository
+    </p>
+    <p>
+      git stash - to move staged files to stash area which are present in
+      staging area.
+    </p>
+    <p>
+      git rebase - performs three tasks which are ; firstly, to move all changes
+      to main which are not in origin/main to a temporary area. secondly, run
+      all origin main commits. thirdly, run all commits in the temporary area on
+      top of our main one at a time, so it avoids merge commits
+    </p>
+  </body>
+</html>
